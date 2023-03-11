@@ -427,14 +427,14 @@
             <h2 data-heading="My Recent Work" class="section-title">Portfolio</h2>
 
             <div class="work-filters">
-                <span class="work-item active-work">All</span>
-                <span class="work-item">Fullstack Website</span>
-                <span class="work-item">Frontend App</span>
-                <span class="work-item">Backend App</span>
+                <span class="work-item active-work" data-filter="all">All</span>
+                <span class="work-item" data-filter=".fullstack">Fullstack</span>
+                <span class="work-item" data-filter=".frontend">Frontend</span>
+                <span class="work-item" data-filter=".backend">Backend</span>
             </div>
 
             <div class="work-container container grid">
-                <div class="work-card">
+                <div class="work-card mix fullstack">
                     <img src="assets/images/aj-10.jpg" alt="" class="work-img">
                     <h3 class="work-title">LoveYourCity</h3>
                     <span class="work-button">Demo
@@ -452,7 +452,7 @@
                     </div>
                 </div>
 
-                <div class="work-card">
+                <div class="work-card mix backend">
                     <img src="assets/images/aj-5.jpg" alt="" class="work-img">
                     <h3 class="work-title">To-Do-List</h3>
                     <span class="work-button">Demo
@@ -470,7 +470,7 @@
                     </div>
                 </div>
 
-                <div class="work-card">
+                <div class="work-card mix backend">
                     <img src="assets/images/aj-7.jpg" alt="" class="work-img">
                     <h3 class="work-title">Mongo Database</h3>
                     <span class="work-button">Demo
@@ -488,7 +488,7 @@
                     </div>
                 </div>
 
-                <div class="work-card">
+                <div class="work-card mix fullstack">
                     <img src="assets/images/aj-8.jpg" alt="" class="work-img">
                     <h3 class="work-title">Web Development</h3>
                     <span class="work-button">Demo
@@ -506,7 +506,7 @@
                     </div>
                 </div>
 
-                <div class="work-card">
+                <div class="work-card mix frontend">
                     <img src="assets/images/aj-14.jpg" alt="" class="work-img">
                     <h3 class="work-title">React.js Project</h3>
                     <span class="work-button">Demo
@@ -524,7 +524,7 @@
                     </div>
                 </div>
 
-                <div class="work-card">
+                <div class="work-card mix frontend">
                     <img src="assets/images/aj-13.jpg" alt="" class="work-img">
                     <h3 class="work-title">Portfolio</h3>
                     <span class="work-button">Demo
@@ -551,6 +551,7 @@
     <!-- ========== MAIN CSS =========  -->
 
     <!-- ======== MIXITUP FILTER ========  -->
+    <script src="assets/js/mixitup.min.js"></script>
 
     <!-- ========== SWIPER JS ==========  -->
 

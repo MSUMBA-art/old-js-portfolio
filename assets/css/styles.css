@@ -643,6 +643,9 @@ img {
   transition: .3s;
 }
 
+.work-button:hover .work-button-icon {
+}
+
    /* === Active Item Work ===  */
    .active-work {
     background-color: var(--skin-color);
