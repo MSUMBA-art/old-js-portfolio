@@ -644,6 +644,7 @@ img {
 }
 
 .work-button:hover .work-button-icon {
+  transform: translateX(.25rem);
 }
 
    /* === Active Item Work ===  */
@@ -651,6 +652,47 @@ img {
     background-color: var(--skin-color);
     color: var(--title-color);
    }
+
+   /* === Portfolio Popup ===  */
+   .portfolio-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+    transition: .3s;
+   }
+
+   .portfolio-popup-inner {
+    background-color: var(--box-color);
+    width: 900px;
+    border-radius: .5rem;
+    padding: 2.5rem;
+    position: relative;
+   }
+
+   .portfolio-popup-content {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 3rem;
+   }
+
+   .portfolio-popup-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--skin-color);
+    cursor: pointer;
+   }
+
+   
 
 /* .section-subtitle {
   display: block;
@@ -735,13 +777,10 @@ img {
 } */
 
 /* ====== for small devices  */
-@media screen and (max-width: 350px) {
+/* @media screen and (max-width: 350px) {
   :root {
     --big-font-size: 2.25rem;
-  }
+  } */
 
-  .container {
-    margin-right: var(--mb-1);
-    margin-right: var(--mb-1);
-  }
-}
+  /* .container
+}/*
