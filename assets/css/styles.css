@@ -666,7 +666,14 @@ img {
     align-items: center;
     padding: 0 1rem;
     z-index: var(--z-modal);
+    opacity: 0;
+    visibility: hidden;
     transition: .3s;
+   }
+
+   .portfolio-popup.open {
+    opacity: 1;
+    visibility: visible;
    }
 
    .portfolio-popup-inner {
@@ -691,6 +698,118 @@ img {
     color: var(--skin-color);
     cursor: pointer;
    }
+
+   .portfolio-popup-img {
+   border-radius: .5rem;
+   }
+
+   .portfolio-popup-subtitle {
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb-0-25);
+   }
+
+   .details-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+   }
+
+   .details-description {
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-2);
+   }
+
+   .details-info li {
+    margin-bottom: var(--mb-0-25);
+    text-transform: capitalize;
+    font-size: var(--small-font-size);
+   }
+
+   .details-info li:last-child {
+    margin-bottom: 0;
+   }
+
+   .details-info li span {
+    font-weight: normal;
+   }
+
+   .details-info li a {
+    text-transform: lowercase;
+    color: var(--skin-color);
+   }
+
+   .details-info-link {
+    /* align-items: center;
+    display: flex;
+    justify-content: space-between;
+    */
+    
+   
+    padding-top: 1.5rem;
+color: red;
+    
+  /* border-radius: 13%; */
+
+  /* display: inline-block;
+    margin: auto; */
+
+   }
+
+   .details-info-link button{
+   border-radius: 5px;
+   margin-left: auto;
+   margin-right: 3rem;
+   background-color: var(--skin-color);
+   }
+
+   .details-info-link a{
+    color: var(--text-color);
+   }
+
+/* ======== Services Section =========  */
+   .services-container {
+    grid-template-columns: repeat(4, 240px);
+    justify-content: center;
+    column-gap: 1.8rem;
+   }
+
+   .services-content {
+    position: relative;
+    background-color: var(--box-color);
+    padding: 6rem 0 2rem 2.5rem;
+    border-radius: .25rem;
+   }
+
+   .services-icon {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--skin-color);
+    margin-bottom: var(--mb-1);
+   }
+
+   .services-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+    font-weight: var(--font-medium);
+   }
+
+   .services-button {
+  color: var(--skin-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  column-gap: 0.25rem;
+  cursor: pointer;
+}
+
+.services-button-icon {
+  font-size: 1rem;
+  transition: .3s;
+}
+
+.services-button:hover .services-button-icon {
+  transform: translateX(.25rem);
+}
+
 
    
 
