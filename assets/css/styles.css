@@ -793,7 +793,7 @@ color: red;
     font-weight: var(--font-medium);
    }
 
-   .services-button {
+.services-button {
   color: var(--skin-color);
   font-size: var(--small-font-size);
   display: flex;
@@ -809,6 +809,81 @@ color: red;
 .services-button:hover .services-button-icon {
   transform: translateX(.25rem);
 }
+
+.services-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+   }
+
+   .services-modal-content {
+    width: 500px;
+    position: relative;
+    background-color: var(--box-color);
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: .5rem;
+   }
+
+   .services-modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--skin-color);
+    cursor: pointer;
+   }
+
+   .services-modal-title, .services-modal-description {
+    text-align: center;
+   }
+
+   .services-modal-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+   }
+
+   .services-modal-description {
+    font-size: var(--small-font-size);
+    padding: 0 3.5rem;
+    margin-bottom: var(--mb-2);
+   }
+
+   .services-modal-services {
+    row-gap: var(--mb-0-75);
+   }
+
+   .services-modal-service {
+    display: flex;
+    align-items: center;
+    column-gap: .6rem;
+   }
+
+   .services-modal-icon {
+    color: var(--skin-color);
+    font-size: 1.1rem;
+   }
+
+   .services-modal-info {
+    font-size: var(--small-font-size);
+   }
+
+   /* === Active Modal ===  */
+   .active-modal {
+    opacity: 1;
+    visibility: visible;
+   }
 
 
    
