@@ -66,3 +66,26 @@ function portfolioItemDetails(portfolioItem) {
    document.querySelector(".portfolio-popup-body").innerHTML =
      portfolioItem.querySelector(".portfolio-item-details").innerHTML;
 }
+
+// ========= SERVICES MODAL ========= 
+const modalViews = document.querySelectorAll('.services-modal'),
+  modelButtons = document.querySelectorAll('.services-button'),
+  modalClose = document.querySelectorAll('.services-modal-close');
+
+  let modal = function (modalClick) {
+  modalViews[modalClick].classList.add('active-modal')
+}
+
+modelButtons.forEach((modelBtn, i) => {
+  modelBtn.addEventListener('click', () => {
+    modal(i);
+  })
+});
+
+modalClose.forEach((modalClose) => {
+  modalClose.addEventListener('click', () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove('active-modal')
+    })
+  })
+})
