@@ -885,6 +885,107 @@ color: red;
     visibility: visible;
    }
 
+   /* ========= Testimonials Section ==========  */
+   @media screen and (min-width: 992px) {
+    .testimonials-container {
+      width: 750px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+   }
+
+   .testimonial-card {
+    background-color: var(--box-color);
+    padding: 1.8rem 2rem;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+   }
+
+   .testimonial-quote {
+    display: inline-flex;
+    font-size: 1.5rem;
+    color: var(--skin-color);
+    margin-bottom: var(--mb-1);
+   }
+
+   .testimonial-description {
+    margin-bottom: var(--mb-1);
+    font-size: var(--small-font-size);
+   }
+
+   .testimonial-date {
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-2);
+   }
+
+   .testimonial-profile {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+   }
+
+   .testimonial-profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--skin-color);
+   }
+
+   .testimonial-profile-data {
+    display: flex;
+    flex-direction: column;
+    row-gap: .4rem;
+   }
+
+   .testimonial-profile-name {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+   }
+
+   .testimonial-profile-detail {
+    font-size: var(--small-font-size);
+   }
+
+   .swiper-pagination-bullet {
+    background-color: var(--box-color);
+   }
+
+   .swiper-pagination-bullet-active {
+    background-color: var(--skin-color);
+   }
+
+  /* ========== CONTACT SECTION =========  */
+ .contact-container {
+   grid-template-columns: 300px 340px;
+   column-gap: 3rem;
+   justify-content: center;
+   align-items: center;
+   }
+
+   .contact-info {
+    display: grid;
+    row-gap: 1rem;
+   }
+
+   .contact-card {
+    background-color: var(--box-color);
+    padding: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+   }
+
+   .contact-card-icon {
+    font-size: 1.8rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-25);
+   }
+
+   .contact-card-title, 
+   .contact-card-data {
+    font-size: var(--small-font-size);
+   }
+
 
    
 
