@@ -1,4 +1,26 @@
+// ======== SHOW SIDEBAR ======= 
+const NavMenu = document.getElementById('sidebar'),
+  navToggle = document.getElementById("nav-toggle"),
+  navClose = document.getElementById("nav-close")
 
+  // ====== SIDEBAR SHOW =====
+  // ==validate if content exists == 
+  if (navToggle) {
+    navToggle.addEventListener("click", () => {
+      NavMenu.classList.add("show-sidebar")
+    })
+}
+
+// ====== SIDEBAR SHOW =====
+  // ==validate if content exists ==  
+if (navClose) {
+  navClose.addEventListener("click", () => {
+    NavMenu.classList.remove("show-sidebar");
+  });
+}
+
+
+  
 
 
 
