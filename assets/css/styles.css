@@ -1478,15 +1478,18 @@ textarea.input {
   .home-social-follow {
     font-size: var(--small-font-size);
     transform: rotate(90deg);
+    display: none;
   }
 
   .home-social-links {
     flex-direction: column;
     row-gap: .25rem;
+    display: none;
   }
 
   .home-social-link {
     font-size: var(--normal-font-size);
+    display: none;
   }
 
    .my-info {
