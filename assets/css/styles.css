@@ -827,7 +827,7 @@ text-align: justify;
 
 /* ======== Services Section =========  */
    .services-container {
-    grid-template-columns: repeat(4, 240px);
+    grid-template-columns: repeat(3, 240px);
     justify-content: center;
     column-gap: 1.8rem;
    }
